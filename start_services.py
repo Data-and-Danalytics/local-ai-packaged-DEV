@@ -233,7 +233,7 @@ def main():
     
     # Give Supabase some time to initialize
     print("Waiting for Supabase to initialize...")
-    time.sleep(10)
+    time.sleep(17)
     
     # Then start the local AI services
     start_local_ai(args.profile)

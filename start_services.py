@@ -201,7 +201,7 @@ def check_and_fix_docker_compose_for_searxng():
                 file.write(modified_content)
                 
             print("Note: After the first run completes successfully, you should re-add 'cap_drop: - ALL' to docker-compose.yml for security reasons.")
-        elif not is_first_run and "# cap_drop: - ALL  # Temporarily commented out for first run" in content:
+        elif not is_first_run and " #cap_drop: - ALL  # Temporarily commented out for first run" in content:
             print("SearXNG has been initialized. Re-enabling 'cap_drop: - ALL' directive for security...")
             # Uncomment the cap_drop line
             modified_content = content.replace("# cap_drop: - ALL  # Temporarily commented out for first run", "cap_drop: - ALL")
@@ -233,7 +233,7 @@ def main():
     
     # Give Supabase some time to initialize
     print("Waiting for Supabase to initialize...")
-    time.sleep(17)
+    time.sleep(15)
     
     # Then start the local AI services
     start_local_ai(args.profile)

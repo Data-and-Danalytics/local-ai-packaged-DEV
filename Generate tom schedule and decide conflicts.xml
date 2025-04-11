@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxGraphModel dx="847" dy="458" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+  <root>
+    <mxCell id="0"/>
+    <mxCell id="1" parent="0"/>
+    <mxCell id="2" value="Start Process" style="shape=ellipse;fillColor=#d5e8d4;" vertex="1" parent="1">
+      <mxGeometry x="100" y="50" width="120" height="60" as="geometry"/>
+    </mxCell>
+    <mxCell id="3" value="Generate Tomorrow’s Schedule (ChatGPT outputs CSV & Diagram)" style="rounded=1;fillColor=#dae8fc;" vertex="1" parent="1">
+      <mxGeometry x="100" y="150" width="200" height="80" as="geometry"/>
+    </mxCell>
+    <mxCell id="4" value="Import CSV into Google Calendar" style="rounded=1;fillColor=#ffe6cc;" vertex="1" parent="1">
+      <mxGeometry x="100" y="250" width="200" height="80" as="geometry"/>
+    </mxCell>
+    <mxCell id="5" value="Sync Google Calendar to iCalendar" style="rounded=1;fillColor=#ffe6cc;" vertex="1" parent="1">
+      <mxGeometry x="100" y="350" width="200" height="80" as="geometry"/>
+    </mxCell>
+    <mxCell id="6" value="Reconcile Appointments (Compare iCalendar & Google Calendar)" style="rounded=1;fillColor=#fff2cc;" vertex="1" parent="1">
+      <mxGeometry x="100" y="450" width="200" height="80" as="geometry"/>
+    </mxCell>
+    <mxCell id="7" value="Resolve Conflicts (Manual for now, automate later)" style="rounded=1;fillColor=#f8cecc;" vertex="1" parent="1">
+      <mxGeometry x="100" y="550" width="200" height="80" as="geometry"/>
+    </mxCell>
+    <mxCell id="8" value="Confirm & Closeout" style="shape=ellipse;fillColor=#d5e8d4;" vertex="1" parent="1">
+      <mxGeometry x="100" y="650" width="120" height="60" as="geometry"/>
+    </mxCell>
+    <mxCell id="9" edge="1" parent="1" source="2" target="3"/>
+    <mxCell id="10" edge="1" parent="1" source="3" target="4"/>
+    <mxCell id="11" edge="1" parent="1" source="4" target="5"/>
+    <mxCell id="12" edge="1" parent="1" source="5" target="6"/>
+    <mxCell id="13" edge="1" parent="1" source="6" target="7"/>
+    <mxCell id="14" edge="1" parent="1" source="7" target="8"/>
+  </root>
+</mxGraphModel>

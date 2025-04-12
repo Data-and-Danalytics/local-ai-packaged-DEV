@@ -9,7 +9,7 @@ volumes:
   valkey-data:  
 
 x-n8n: &service-n8n
-  image: n8nio/n8n:latest
+  image: n8nio/n8n:next
   environment:
     - DB_TYPE=postgresdb
     - DB_POSTGRESDB_HOST=db
